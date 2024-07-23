@@ -1,11 +1,10 @@
 import React from 'react'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   return (
     <div>
-     <h1 className="text-3xl text-center font-bold underline">
-      this is Pranav Mandale
-    </h1>
+     <Navbar/>
     </div>
   )
 }
