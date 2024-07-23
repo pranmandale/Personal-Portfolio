@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import logo from '../../assets/photo.avif'
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
@@ -35,7 +36,7 @@ function Navbar() {
       <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0'>
         <div className='flex justify-between items-center'>
             <div className='flex space-x-2'>
-                <img src='' className='h-12 w-12 rounded-full' alt=''/>
+                <img src={logo} className='h-12 w-12 rounded-full' alt=''/>
                 <h1 className='font-semibold text-xl cursor-pointer'>Pranav
                 <p className='text-sm'>Web Developer</p>
                 </h1>
