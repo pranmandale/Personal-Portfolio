@@ -46,16 +46,18 @@ function Skills() {
         },
     ];
   return (
-    <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10'>
+    <div 
+    name='Skill'
+    className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
       <div>
-        <h1 className='text-3xl font-bold mb-5'>Projects</h1>
-        <span className='underline text-xl font-semibold'>Featured Projects</span>
+        <h1 className='text-3xl font-bold mb-5'>Skills</h1>
+        {/* <span className='underline text-xl font-semibold'>Featured Projects</span> */}
       </div>
       <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-3'>
         {
             images.map(({id,img,name}) => (
                 <div className='flex flex-col items-center justify-center border-[2px] md:w-[200px] h-[200px] rounded-full  p-1 
-                cursor-pointer hover:scale-110 duration-200' key={id}>
+                cursor-pointer hover:scale-70 duration-200' key={id}>
                     <img src={img} className='w-[150px]  rounded-full ' alt=''/>
                     <div>
                         <div className=''>{name}</div>                        

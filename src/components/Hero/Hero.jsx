@@ -17,7 +17,9 @@ function Hero() {
   return (
     <>
     {/* my means margin from top also as well as bottom */}
-      <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 '>   
+      <div 
+      name="Hero"
+      className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 '>   
         <div className='flex flex-col md:flex-row '>
             <div className='md:w-1/2 mt-8 md:mt-24 space-y-2 order-2 md:order-1'>
               <span className='text-xl'>Welcome In My Feed</span>
@@ -26,7 +28,7 @@ function Hero() {
               {/* <span className='text-red-600 font-bold'>Developer</span> */}
               <ReactTyped
                 className='text-red-600 font-bold'
-                strings= {["Developer", "Programmer", "Coder"]}
+                strings= {["Developer", "Programmer"]}
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
@@ -78,7 +80,7 @@ function Hero() {
             </div>
         </div>
       </div>
-      
+      <hr/>
       
     </>
   )
